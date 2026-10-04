@@ -104,13 +104,18 @@ sudo insmod driver/parking_sensor.ko start_distance=1000   # rejected: Invalid p
 
 ## 5.7 Test Results
 
-Run the suites and paste the output summary here.
+`make evidence` builds the project, loads the driver, runs both automated
+suites and a scripted dashboard session (single reading, reverse parking with
+auto-brake, /proc statistics, log), and stores all output with the kernel log
+in [docs/test-results/](test-results/). The pass/fail summary is in
+[test-results/README.md](test-results/README.md).
 
-| Suite | Total | Passed | Failed | Date |
-|---|---|---|---|---|
-| Unit | 11 | | | |
-| Integration | 14 | | | |
-| System (manual) | 13 | | | |
+| Suite | Tests | Result |
+|---|---|---|
+| Unit | 11 | see [03_unit_tests.txt](test-results/03_unit_tests.txt) |
+| Integration | 14 | see [04_driver_tests.txt](test-results/04_driver_tests.txt) |
+| System (scripted) | ST-02, ST-03, ST-10, ST-11 | see [05_dashboard_demo.txt](test-results/05_dashboard_demo.txt) |
+| System (manual) | 13 | tick the Result column in 5.5 |
 
 ## 5.8 Improvements in this Stage
 | Area | Improvement |
