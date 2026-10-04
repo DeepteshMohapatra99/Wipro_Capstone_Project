@@ -1,0 +1,40 @@
+# Builds the kernel module and the C++ application on a Linux machine,
+# loads the driver, runs all tests and the dashboard demo (make evidence)
+# and commits the output to docs/test-results/.
+name: Build and Test
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/test-results/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install compiler and kernel headers
+        run: make setup
+
+      - name: Build, load driver, run tests and demo
+        run: make evidence
+
+      - name: Commit test results
+        if: always()
+        run: |
+          git config user.name "DeepteshMohapatra"
+          git config user.email "mohapatradeeptesh386@gmail.com"
+          git add -f docs/test-results
+          git commit -m "test: add test results from kernel $(uname -r) [skip ci]" || exit 0
+          git pull --rebase
+          git push
+
+      - name: Fail if any test failed
+        run: |
+          grep -q " 0 failed" docs/test-results/03_unit_tests.txt
+          grep -q " 0 failed" docs/test-results/04_driver_tests.txt
