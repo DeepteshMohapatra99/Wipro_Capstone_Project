@@ -1,5 +1,7 @@
 # Virtual Parking Sensor – Linux Device Driver & C++ Dashboard
 
+[![Build and Test](https://github.com/DeepteshMohapatra99/Wipro_Capstone_Project/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/DeepteshMohapatra99/Wipro_Capstone_Project/actions/workflows/build-and-test.yml)
+
 A Linux **kernel character device driver** that simulates an ultrasonic rear
 parking sensor, plus a **C++ user-space dashboard** that reads the distance to
 the obstacle, raises proximity alerts, beeps faster as the car gets closer and
