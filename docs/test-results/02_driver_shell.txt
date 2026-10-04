@@ -1,5 +1,5 @@
 + ls -l /dev/parksensor
-crw-rw-rw- 1 root root 237, 0 Oct  4 17:15 /dev/parksensor
+crw-rw-rw- 1 root root 237, 0 Oct  4 17:17 /dev/parksensor
 + cat /dev/parksensor
 distance=300 cm zone=SAFE mode=IDLE
 + echo 'dist 60'
@@ -8,7 +8,7 @@ distance=60 cm zone=DANGER mode=IDLE
 + echo 'mode reverse'
 + sleep 1
 + cat /dev/parksensor
-distance=40 cm zone=DANGER mode=REVERSING
+distance=39 cm zone=DANGER mode=REVERSING
 + echo reset
 + cat /dev/parksensor
 distance=300 cm zone=SAFE mode=IDLE
