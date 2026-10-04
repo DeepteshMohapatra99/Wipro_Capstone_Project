@@ -5,6 +5,8 @@
 #include <iostream>
 #include <sstream>
 
+#include <unistd.h>
+
 namespace {
 
 const char* const kReset = "\033[0m";
@@ -69,7 +71,12 @@ void Display::showLiveLine(const ps_reading& r) const
          << std::left << std::setw(8) << AlertManager::zoneName(z) << ' '
          << std::setw(51) << distanceBar(r.distance_cm);
 
-    std::cout << '\r' << colorize(line.str(), z) << std::flush;
+    // Refresh in place on a terminal; one line per sample when redirected to a file.
+    static const bool tty = ::isatty(STDOUT_FILENO);
+    if (tty)
+        std::cout << '\r' << colorize(line.str(), z) << std::flush;
+    else
+        std::cout << colorize(line.str(), z) << '\n';
 }
 
 void Display::showThresholds(const ps_thresholds& t) const

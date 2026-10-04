@@ -110,8 +110,14 @@ virtual-parking-sensor/
 - Kernel headers for the running kernel
 
 ```bash
-sudo apt update
-sudo apt install build-essential linux-headers-$(uname -r)
+make setup        # installs them on Ubuntu/Debian (apt) or Fedora (dnf)
+```
+
+Manual installation:
+
+```bash
+sudo apt install build-essential linux-headers-$(uname -r)                 # Ubuntu / Debian
+sudo dnf install gcc gcc-c++ make kernel-devel-$(uname -r) elfutils-libelf-devel   # Fedora
 ```
 
 > Secure Boot: if `insmod` fails with *"Key was rejected by service"*, disable
@@ -213,6 +219,14 @@ make load
 make integration     # 14 driver integration tests
 # or both:
 make test
+```
+
+To build, load, test, run a dashboard demo and save every output as evidence
+in [docs/test-results/](docs/test-results/), run a single command:
+
+```bash
+make evidence        # results only
+make publish         # results + git commit + git push
 ```
 
 Test plan and test cases: [docs/05_Testing.md](docs/05_Testing.md)
