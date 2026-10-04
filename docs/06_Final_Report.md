@@ -97,11 +97,11 @@ and its C++ user-space application. The driver can later be connected to real
 sensor hardware without changes to the application.
 
 ## 6.10 Submission Checklist
-- [ ] Source code pushed to GitHub (`driver/`, `app/`, `include/`, `tests/`)
-- [ ] README.md with build and run instructions
-- [ ] Stage documents 1–6 in `docs/`
-- [ ] UML diagrams (`docs/UML_Diagrams.md`)
-- [ ] Screenshots in `docs/images/`
-- [ ] Test results filled in `docs/05_Testing.md`
-- [ ] Git history with meaningful commits, release tag `v1.0`
+- [x] Source code pushed to GitHub (`driver/`, `app/`, `include/`, `tests/`)
+- [x] README.md with build and run instructions
+- [x] Stage documents 1–6 in `docs/`
+- [x] UML diagrams (`docs/UML_Diagrams.md`)
+- [x] Run evidence in `docs/test-results/` (screenshots in `docs/images/` optional)
+- [x] Test results filled in `docs/05_Testing.md`
+- [x] Git history with meaningful commits, release tag `v1.0`
 - [x] Author name filled in (`README.md`, `MODULE_AUTHOR`)

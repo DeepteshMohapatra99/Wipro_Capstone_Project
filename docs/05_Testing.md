@@ -65,16 +65,16 @@ non-zero exit code on failure.
 | ID | Scenario | Steps | Expected | Result |
 |---|---|---|---|---|
 | ST-01 | Start without driver | `make unload`; `./app/parking_monitor` | "Cannot open /dev/parksensor (is the driver loaded?)", exit code 1 | ☐ |
-| ST-02 | Single reading | Menu 1 | Card with 300 cm, SAFE, green | ☐ |
-| ST-03 | Reverse parking | Menu 2 | Zones SAFE → CAUTION → DANGER → STOP announced, auto-brake at ≤ 30 cm | ☐ |
+| ST-02 | Single reading | Menu 1 | Card with 300 cm, SAFE, green | ✅ |
+| ST-03 | Reverse parking | Menu 2 | Zones SAFE → CAUTION → DANGER → STOP announced, auto-brake at ≤ 30 cm | ✅ |
 | ST-04 | Ctrl+C in live mode | Menu 2, press Ctrl+C | "stopped by user", menu shown again, mode IDLE | ☐ |
 | ST-05 | Drive forward | Menu 5 → 20; menu 3 | Distance increases, zones go back to SAFE, stops at 400 | ☐ |
 | ST-06 | No auto-brake | `--no-autobrake`, menu 2 | Car continues to 0 cm, driver stops it | ☐ |
 | ST-07 | Custom thresholds | Menu 7: 200/100/50; menu 8 | New thresholds shown; zones change at new limits | ☐ |
 | ST-08 | Invalid threshold input | Menu 7: 50/100/150 | "Invalid: thresholds must satisfy..." | ☐ |
 | ST-09 | Invalid menu input | Enter `abc`, `99` | Re-prompt, no crash | ☐ |
-| ST-10 | Log file | Menu 10 | Timestamped entries incl. zone changes, auto-brake | ☐ |
-| ST-11 | Driver statistics | Menu 9 | Contents of `/proc/parksensor` | ☐ |
+| ST-10 | Log file | Menu 10 | Timestamped entries incl. zone changes, auto-brake | ✅ |
+| ST-11 | Driver statistics | Menu 9 | Contents of `/proc/parksensor` | ✅ |
 | ST-12 | One-shot mode | `./app/parking_monitor --once` | One reading, exit 0 | ☐ |
 | ST-13 | Module parameter | `make reload START=50` then `cat /dev/parksensor` | distance=50 cm zone=DANGER | ☐ |
 
@@ -112,9 +112,9 @@ in [docs/test-results/](test-results/). The pass/fail summary is in
 
 | Suite | Tests | Result |
 |---|---|---|
-| Unit | 11 | see [03_unit_tests.txt](test-results/03_unit_tests.txt) |
-| Integration | 14 | see [04_driver_tests.txt](test-results/04_driver_tests.txt) |
-| System (scripted) | ST-02, ST-03, ST-10, ST-11 | see [05_dashboard_demo.txt](test-results/05_dashboard_demo.txt) |
+| Unit | 11 | **11 passed, 0 failed** – [03_unit_tests.txt](test-results/03_unit_tests.txt) |
+| Integration | 14 | **14 passed, 0 failed** – [04_driver_tests.txt](test-results/04_driver_tests.txt) |
+| System (scripted) | ST-02, ST-03, ST-10, ST-11 | **passed** – auto-brake at 27 cm, [05_dashboard_demo.txt](test-results/05_dashboard_demo.txt) |
 | System (manual) | 13 | tick the Result column in 5.5 |
 
 ## 5.8 Improvements in this Stage
