@@ -1,0 +1,83 @@
+# Stage 4 – Initial Implementation & Prototype
+
+## 4.1 Goal of this Stage
+Implement the core modules, build a first working prototype, integrate the
+driver with the C++ application step by step and demonstrate the basic
+functionality.
+
+## 4.2 Implementation Order
+
+| Step | Module | What was implemented | How it was verified |
+|---|---|---|---|
+| 1 | Shared header | `ps_reading`, `ps_thresholds`, ioctl codes, `ps_classify()` | Included in both kernel and C++ builds |
+| 2 | Driver skeleton | `alloc_chrdev_region`, `cdev_add`, `class_create`, `device_create`, cleanup with `goto` error path | `insmod` → `/dev/parksensor` exists; `rmmod` → removed |
+| 3 | `read()` | Text sample, one per open | `cat /dev/parksensor` |
+| 4 | `ioctl()` | 7 commands with validation | C++ integration tests |
+| 5 | Kernel timer | 200 ms simulation, noise, limits, zone change log | `dmesg` while reversing |
+| 6 | `write()` | Text commands for shell testing | `echo "dist 60" > /dev/parksensor` |
+| 7 | procfs + module parameter | `/proc/parksensor`, `start_distance` | `cat /proc/parksensor`, `insmod ... start_distance=120` |
+| 8 | `ParkingSensor` (C++) | RAII wrapper, `SensorException` | integration tests |
+| 9 | `AlertManager`, `Display`, `Logger` | zone logic, output, log file | unit tests |
+| 10 | `main.cpp` | menu, live monitor, auto-brake, SIGINT | manual system test |
+
+## 4.3 Prototype Functionality
+
+The prototype supports:
+- loading/unloading the module and automatic device node creation,
+- reading the distance from the shell and from the C++ application,
+- changing distance, speed and mode,
+- live reverse parking with zone change alerts,
+- automatic brake in the STOP zone.
+
+### Demo script
+```bash
+make                      # build everything
+make load                 # insert driver
+cat /dev/parksensor       # distance=300 cm zone=SAFE mode=IDLE
+make run                  # option 2 -> watch zones change -> auto-brake
+make logs                 # kernel messages for each zone change
+cat /proc/parksensor      # statistics
+make unload
+```
+
+### Evidence (add screenshots here)
+| # | Screenshot | File |
+|---|---|---|
+| 1 | `make load` and `ls -l /dev/parksensor` | `docs/images/01_load.png` |
+| 2 | `cat /dev/parksensor` | `docs/images/02_cat.png` |
+| 3 | Dashboard menu | `docs/images/03_menu.png` |
+| 4 | Live reverse parking with auto-brake | `docs/images/04_live.png` |
+| 5 | `dmesg` zone changes | `docs/images/05_dmesg.png` |
+| 6 | `/proc/parksensor` | `docs/images/06_proc.png` |
+
+## 4.4 Issues Faced and Solutions
+
+| # | Issue | Cause | Solution |
+|---|---|---|---|
+| 1 | `cat /dev/parksensor` printed the same line forever | `read()` always returned data, so `cat` never saw end-of-file | Return data only when `*off == 0`, then advance `*off`; next call returns 0 (EOF) |
+| 2 | Deadlock risk between ioctl and timer | Timer runs in softirq; if it interrupts a process holding the lock on the same CPU it spins forever | Use `spin_lock_bh()` in process context and `spin_lock()` in the timer |
+| 3 | Could not use a mutex for the sensor state | Mutexes may sleep; sleeping is forbidden in timer (softirq) context | Spinlock for all shared state |
+| 4 | Timer could fire after module unload | Callback re-arms itself with `mod_timer()` | `stopping` flag set under the lock, callback does not re-arm, then `timer_delete_sync()` |
+| 5 | Build errors on newer kernels | `class_create()` lost its `THIS_MODULE` argument in 6.4; `del_timer_sync()` renamed to `timer_delete_sync()`; `devnode` callback became `const` in 6.2 | `LINUX_VERSION_CODE` / `KERNEL_VERSION()` checks |
+| 6 | Application needed `sudo` to open the device | Default device node permission is 0600 | `devnode` callback sets mode 0666 |
+| 7 | Kernel and app could disagree on zone limits | Zone rule duplicated in two places | Single `ps_classify()` in the shared header |
+| 8 | Ctrl+C killed the whole application during live monitoring | Default SIGINT action terminates the process | `sigaction` handler sets a flag only while monitoring (RAII `SigintGuard`), loop stops the car and returns to the menu |
+| 9 | Wrong menu input (letters) broke `std::cin` | `operator>>` failure state | Read whole line with `getline` and parse with `istringstream`, re-ask on error |
+
+## 4.5 Progress Log
+
+Fill in the dates as you complete each step.
+
+| Date | Work done | Commit |
+|---|---|---|
+| | Stage 1–2 documents | `docs: add project introduction and PRD` |
+| | Design document and UML | `docs: add system design and UML diagrams` |
+| | Driver skeleton + read | `feat(driver): character device skeleton with read` |
+| | ioctl API, timer, write, procfs | `feat(driver): ioctl API, simulation timer, procfs` |
+| | C++ dashboard | `feat(app): C++ dashboard with live monitor and auto-brake` |
+| | Tests | `test: add unit and driver integration tests` |
+| | Final documentation | `docs: testing and final report` |
+
+## 4.6 Next Stage
+Stage 5: complete remaining features, run unit, integration and system tests,
+fix defects and improve code quality.
