@@ -2,6 +2,8 @@
 
 [![Build and Test](https://github.com/DeepteshMohapatra99/Wipro_Capstone_Project/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/DeepteshMohapatra99/Wipro_Capstone_Project/actions/workflows/build-and-test.yml)
 
+> **New here? Start with [docs/CODE_EXPLAINED.md](docs/CODE_EXPLAINED.md)** – the whole project explained in simple words, file by file.
+
 A Linux **kernel character device driver** that simulates an ultrasonic rear
 parking sensor, plus a **C++ user-space dashboard** that reads the distance to
 the obstacle, raises proximity alerts, beeps faster as the car gets closer and
@@ -263,6 +265,7 @@ Errors: `EINVAL` (bad value), `EFAULT` (bad user pointer), `ENOTTY` (unknown ioc
 | 4 – Implementation & Prototype | [docs/04_Implementation_Progress.md](docs/04_Implementation_Progress.md) |
 | 5 – Testing & Integration | [docs/05_Testing.md](docs/05_Testing.md) |
 | 6 – Final Report | [docs/06_Final_Report.md](docs/06_Final_Report.md) |
+| Simple explanation | [docs/CODE_EXPLAINED.md](docs/CODE_EXPLAINED.md) |
 
 ---
 
