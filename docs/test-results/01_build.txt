@@ -1,0 +1,24 @@
+make -C driver
+make -C /lib/modules/6.17.0-1022-azure/build M=/home/runner/work/Wipro_Capstone_Project/Wipro_Capstone_Project/driver modules
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  You are using:           gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  CC [M]  parking_sensor.o
+  MODPOST Module.symvers
+  CC [M]  parking_sensor.mod.o
+  CC [M]  .module-common.o
+  LD [M]  parking_sensor.ko
+  BTF [M] parking_sensor.ko
+Skipping BTF generation for parking_sensor.ko due to unavailability of vmlinux
+make -C app
+mkdir -p build
+g++ -Iinclude -I../include -std=c++17 -Wall -Wextra -Wpedantic -O2 -MMD -MP -c src/AlertManager.cpp -o build/AlertManager.o
+g++ -Iinclude -I../include -std=c++17 -Wall -Wextra -Wpedantic -O2 -MMD -MP -c src/Display.cpp -o build/Display.o
+g++ -Iinclude -I../include -std=c++17 -Wall -Wextra -Wpedantic -O2 -MMD -MP -c src/Logger.cpp -o build/Logger.o
+g++ -Iinclude -I../include -std=c++17 -Wall -Wextra -Wpedantic -O2 -MMD -MP -c src/ParkingSensor.cpp -o build/ParkingSensor.o
+g++ -Iinclude -I../include -std=c++17 -Wall -Wextra -Wpedantic -O2 -MMD -MP -c src/SensorException.cpp -o build/SensorException.o
+g++ -Iinclude -I../include -std=c++17 -Wall -Wextra -Wpedantic -O2 -MMD -MP -c src/main.cpp -o build/main.o
+g++ -std=c++17 -Wall -Wextra -Wpedantic -O2 -o parking_monitor build/AlertManager.o build/Display.o build/Logger.o build/ParkingSensor.o build/SensorException.o build/main.o
+make -C tests
+g++ -I. -I../app/include -I../include -std=c++17 -Wall -Wextra -Wno-sign-compare -O0 -g -o unit_tests unit_tests.cpp ../app/src/AlertManager.cpp ../app/src/Display.cpp ../app/src/Logger.cpp
+g++ -I. -I../app/include -I../include -std=c++17 -Wall -Wextra -Wno-sign-compare -O0 -g -o driver_tests driver_tests.cpp ../app/src/ParkingSensor.cpp ../app/src/SensorException.cpp

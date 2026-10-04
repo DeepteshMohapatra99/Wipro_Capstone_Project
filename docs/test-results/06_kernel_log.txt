@@ -1,0 +1,41 @@
+[  101.467904] parksensor: loaded, /dev/parksensor (major 237), start distance 300 cm
+[  101.477600] parksensor: zone SAFE -> DANGER at 60 cm
+[  101.478353] parksensor: mode set to REVERSING
+[  102.481225] parksensor: reset to defaults
+[  102.487555] parksensor: zone SAFE -> DANGER at 42 cm
+[  102.487560] parksensor: reset to defaults
+[  102.487567] parksensor: reset to defaults
+[  102.487589] parksensor: zone SAFE -> CAUTION at 120 cm
+[  102.487593] parksensor: zone CAUTION -> DANGER at 50 cm
+[  102.487596] parksensor: zone DANGER -> STOP at 10 cm
+[  102.487603] parksensor: reset to defaults
+[  102.487629] parksensor: reset to defaults
+[  102.487631] parksensor: zone SAFE -> CAUTION at 100 cm
+[  102.487634] parksensor: zone CAUTION -> STOP at 100 cm
+[  102.487636] parksensor: thresholds caution=120 danger=110 stop=105
+[  102.487638] parksensor: reset to defaults
+[  102.487643] parksensor: reset to defaults
+[  102.487645] parksensor: zone SAFE -> CAUTION at 123 cm
+[  103.087803] parksensor: reset to defaults
+[  103.087811] parksensor: mode set to REVERSING
+[  104.087889] parksensor: mode set to IDLE
+[  104.087933] parksensor: reset to defaults
+[  104.087936] parksensor: zone SAFE -> CAUTION at 100 cm
+[  104.087940] parksensor: mode set to FORWARD
+[  105.088006] parksensor: mode set to IDLE
+[  105.088104] parksensor: reset to defaults
+[  105.088107] parksensor: zone SAFE -> STOP at 20 cm
+[  105.088111] parksensor: mode set to REVERSING
+[  105.207591] parksensor: limit reached at 0 cm, vehicle stopped
+[  105.888204] parksensor: reset to defaults
+[  105.888215] parksensor: reset to defaults
+[  105.888217] parksensor: zone SAFE -> CAUTION at 123 cm
+[  105.888242] parksensor: reset to defaults
+[  105.888248] parksensor: zone SAFE -> DANGER at 77 cm
+[  105.888253] parksensor: reset to defaults
+[  105.890513] parksensor: reset to defaults
+[  105.892870] parksensor: mode set to REVERSING
+[  112.279484] parksensor: zone SAFE -> CAUTION at 148 cm
+[  115.191451] parksensor: zone CAUTION -> DANGER at 78 cm
+[  117.271424] parksensor: zone DANGER -> STOP at 27 cm
+[  117.305281] parksensor: mode set to IDLE

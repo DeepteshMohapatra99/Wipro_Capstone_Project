@@ -1,0 +1,4 @@
+after rmmod:
+ls: cannot access '/dev/parksensor': No such file or directory
+ls: cannot access '/proc/parksensor': No such file or directory
+module not loaded

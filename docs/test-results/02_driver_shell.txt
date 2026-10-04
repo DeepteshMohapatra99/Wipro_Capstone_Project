@@ -1,0 +1,27 @@
++ ls -l /dev/parksensor
+crw-rw-rw- 1 root root 237, 0 Oct  4 17:15 /dev/parksensor
++ cat /dev/parksensor
+distance=300 cm zone=SAFE mode=IDLE
++ echo 'dist 60'
++ cat /dev/parksensor
+distance=60 cm zone=DANGER mode=IDLE
++ echo 'mode reverse'
++ sleep 1
++ cat /dev/parksensor
+distance=40 cm zone=DANGER mode=REVERSING
++ echo reset
++ cat /dev/parksensor
+distance=300 cm zone=SAFE mode=IDLE
++ echo 'dist 999'
+/bin/bash: line 3: echo: write error: Invalid argument
++ cat /proc/parksensor
+Virtual Parking Sensor - driver statistics
+device        : /dev/parksensor (major 237, minor 0)
+distance_cm   : 300
+zone          : SAFE
+mode          : IDLE
+speed_cm/tick : 5 (tick = 200 ms)
+thresholds    : caution<=150 danger<=80 stop<=30
+samples       : 1
+zone_changes  : 1
+opens         : 8

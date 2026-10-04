@@ -1,0 +1,17 @@
+=== Driver integration tests (/dev/parksensor) ===
+[PASS] open_missing_device_fails
+[PASS] reset_restores_defaults
+[PASS] zones_follow_distance
+[PASS] invalid_values_are_rejected
+[PASS] custom_thresholds_change_zone
+[PASS] idle_distance_is_constant
+[PASS] reversing_reduces_distance
+[PASS] forward_increases_distance
+[PASS] vehicle_stops_at_zero
+[PASS] sample_counter_increments
+[PASS] text_read_interface
+[PASS] text_write_interface
+[PASS] unknown_ioctl_is_rejected
+[PASS] proc_statistics_available
+
+14 passed, 0 failed, 14 total

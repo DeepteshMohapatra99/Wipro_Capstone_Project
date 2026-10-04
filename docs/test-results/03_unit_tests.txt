@@ -1,0 +1,14 @@
+=== Unit tests ===
+[PASS] classify_default_thresholds
+[PASS] classify_custom_thresholds
+[PASS] thresholds_validation
+[PASS] zone_conversion
+[PASS] zone_names
+[PASS] beeps_get_faster_when_closer
+[PASS] alert_state_transitions
+[PASS] distance_bar
+[PASS] mode_names
+[PASS] colorize_disabled_returns_plain_text
+[PASS] logger_writes_and_tails
+
+11 passed, 0 failed, 11 total
