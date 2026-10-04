@@ -1,0 +1,26 @@
+# Kernel module build output
+*.ko
+*.o
+*.mod
+*.mod.c
+*.mod.o
+*.cmd
+.*.cmd
+modules.order
+Module.symvers
+.tmp_versions/
+
+# User-space build output
+app/build/
+app/parking_monitor
+tests/unit_tests
+tests/driver_tests
+*.d
+
+# Runtime files
+parking_log.txt
+*.tmp
+
+# Editors
+.vscode/
+*.swp
