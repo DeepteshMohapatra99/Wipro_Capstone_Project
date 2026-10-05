@@ -41,125 +41,129 @@ Choice:
 Live monitoring - press Ctrl+C to stop
  300 cm  SAFE     [CAR]..............................|WALL           
  300 cm  SAFE     [CAR]..............................|WALL           
- 294 cm  SAFE     [CAR].............................|WALL            
- 294 cm  SAFE     [CAR].............................|WALL            
- 288 cm  SAFE     [CAR]............................|WALL             
- 288 cm  SAFE     [CAR]............................|WALL             
- 283 cm  SAFE     [CAR]............................|WALL             
- 283 cm  SAFE     [CAR]............................|WALL             
- 278 cm  SAFE     [CAR]...........................|WALL              
- 278 cm  SAFE     [CAR]...........................|WALL              
- 272 cm  SAFE     [CAR]...........................|WALL              
- 272 cm  SAFE     [CAR]...........................|WALL              
- 268 cm  SAFE     [CAR]..........................|WALL               
- 268 cm  SAFE     [CAR]..........................|WALL               
- 264 cm  SAFE     [CAR]..........................|WALL               
- 264 cm  SAFE     [CAR]..........................|WALL               
- 260 cm  SAFE     [CAR]..........................|WALL               
- 260 cm  SAFE     [CAR]..........................|WALL               
- 260 cm  SAFE     [CAR]..........................|WALL               
- 255 cm  SAFE     [CAR].........................|WALL                
- 255 cm  SAFE     [CAR].........................|WALL                
- 251 cm  SAFE     [CAR].........................|WALL                
- 251 cm  SAFE     [CAR].........................|WALL                
+ 295 cm  SAFE     [CAR].............................|WALL            
+ 295 cm  SAFE     [CAR].............................|WALL            
+ 291 cm  SAFE     [CAR].............................|WALL            
+ 291 cm  SAFE     [CAR].............................|WALL            
+ 286 cm  SAFE     [CAR]............................|WALL             
+ 286 cm  SAFE     [CAR]............................|WALL             
+ 282 cm  SAFE     [CAR]............................|WALL             
+ 282 cm  SAFE     [CAR]............................|WALL             
+ 277 cm  SAFE     [CAR]...........................|WALL              
+ 277 cm  SAFE     [CAR]...........................|WALL              
+ 273 cm  SAFE     [CAR]...........................|WALL              
+ 273 cm  SAFE     [CAR]...........................|WALL              
+ 267 cm  SAFE     [CAR]..........................|WALL               
+ 267 cm  SAFE     [CAR]..........................|WALL               
+ 263 cm  SAFE     [CAR]..........................|WALL               
+ 263 cm  SAFE     [CAR]..........................|WALL               
+ 263 cm  SAFE     [CAR]..........................|WALL               
+ 259 cm  SAFE     [CAR].........................|WALL                
+ 259 cm  SAFE     [CAR].........................|WALL                
+ 254 cm  SAFE     [CAR].........................|WALL                
+ 254 cm  SAFE     [CAR].........................|WALL                
+ 250 cm  SAFE     [CAR].........................|WALL                
+ 250 cm  SAFE     [CAR].........................|WALL                
  246 cm  SAFE     [CAR]........................|WALL                 
  246 cm  SAFE     [CAR]........................|WALL                 
- 242 cm  SAFE     [CAR]........................|WALL                 
- 242 cm  SAFE     [CAR]........................|WALL                 
- 236 cm  SAFE     [CAR].......................|WALL                  
- 236 cm  SAFE     [CAR].......................|WALL                  
+ 241 cm  SAFE     [CAR]........................|WALL                 
+ 241 cm  SAFE     [CAR]........................|WALL                 
+ 237 cm  SAFE     [CAR].......................|WALL                  
+ 237 cm  SAFE     [CAR].......................|WALL                  
  232 cm  SAFE     [CAR].......................|WALL                  
  232 cm  SAFE     [CAR].......................|WALL                  
- 226 cm  SAFE     [CAR]......................|WALL                   
- 226 cm  SAFE     [CAR]......................|WALL                   
- 221 cm  SAFE     [CAR]......................|WALL                   
- 221 cm  SAFE     [CAR]......................|WALL                   
- 215 cm  SAFE     [CAR].....................|WALL                    
- 215 cm  SAFE     [CAR].....................|WALL                    
+ 228 cm  SAFE     [CAR]......................|WALL                   
+ 228 cm  SAFE     [CAR]......................|WALL                   
+ 223 cm  SAFE     [CAR]......................|WALL                   
+ 223 cm  SAFE     [CAR]......................|WALL                   
+ 218 cm  SAFE     [CAR].....................|WALL                    
+ 218 cm  SAFE     [CAR].....................|WALL                    
+ 214 cm  SAFE     [CAR].....................|WALL                    
+ 214 cm  SAFE     [CAR].....................|WALL                    
  210 cm  SAFE     [CAR].....................|WALL                    
  210 cm  SAFE     [CAR].....................|WALL                    
  204 cm  SAFE     [CAR]....................|WALL                     
  204 cm  SAFE     [CAR]....................|WALL                     
- 200 cm  SAFE     [CAR]....................|WALL                     
- 200 cm  SAFE     [CAR]....................|WALL                     
- 194 cm  SAFE     [CAR]...................|WALL                      
- 194 cm  SAFE     [CAR]...................|WALL                      
- 194 cm  SAFE     [CAR]...................|WALL                      
- 188 cm  SAFE     [CAR]..................|WALL                       
- 188 cm  SAFE     [CAR]..................|WALL                       
- 183 cm  SAFE     [CAR]..................|WALL                       
- 183 cm  SAFE     [CAR]..................|WALL                       
- 178 cm  SAFE     [CAR].................|WALL                        
- 178 cm  SAFE     [CAR].................|WALL                        
- 173 cm  SAFE     [CAR].................|WALL                        
- 173 cm  SAFE     [CAR].................|WALL                        
- 167 cm  SAFE     [CAR]................|WALL                         
- 167 cm  SAFE     [CAR]................|WALL                         
+ 204 cm  SAFE     [CAR]....................|WALL                     
+ 199 cm  SAFE     [CAR]...................|WALL                      
+ 199 cm  SAFE     [CAR]...................|WALL                      
+ 195 cm  SAFE     [CAR]...................|WALL                      
+ 195 cm  SAFE     [CAR]...................|WALL                      
+ 190 cm  SAFE     [CAR]...................|WALL                      
+ 190 cm  SAFE     [CAR]...................|WALL                      
+ 185 cm  SAFE     [CAR]..................|WALL                       
+ 185 cm  SAFE     [CAR]..................|WALL                       
+ 179 cm  SAFE     [CAR].................|WALL                        
+ 179 cm  SAFE     [CAR].................|WALL                        
+ 174 cm  SAFE     [CAR].................|WALL                        
+ 174 cm  SAFE     [CAR].................|WALL                        
+ 170 cm  SAFE     [CAR].................|WALL                        
+ 170 cm  SAFE     [CAR].................|WALL                        
+ 166 cm  SAFE     [CAR]................|WALL                         
+ 166 cm  SAFE     [CAR]................|WALL                         
  161 cm  SAFE     [CAR]................|WALL                         
  161 cm  SAFE     [CAR]................|WALL                         
- 157 cm  SAFE     [CAR]...............|WALL                          
- 157 cm  SAFE     [CAR]...............|WALL                          
- 152 cm  SAFE     [CAR]...............|WALL                          
- 152 cm  SAFE     [CAR]...............|WALL                          
+ 155 cm  SAFE     [CAR]...............|WALL                          
+ 155 cm  SAFE     [CAR]...............|WALL                          
 
-  >> Zone SAFE -> CAUTION at 148 cm: Obstacle nearby - slow down
- 148 cm  CAUTION  [CAR]..............|WALL                           
- 148 cm  CAUTION  [CAR]..............|WALL                           
- 142 cm  CAUTION  [CAR]..............|WALL                           
- 142 cm  CAUTION  [CAR]..............|WALL                           
- 138 cm  CAUTION  [CAR].............|WALL                            
- 138 cm  CAUTION  [CAR].............|WALL                            
- 133 cm  CAUTION  [CAR].............|WALL                            
- 133 cm  CAUTION  [CAR].............|WALL                            
- 129 cm  CAUTION  [CAR]............|WALL                             
- 129 cm  CAUTION  [CAR]............|WALL                             
- 129 cm  CAUTION  [CAR]............|WALL                             
- 124 cm  CAUTION  [CAR]............|WALL                             
- 124 cm  CAUTION  [CAR]............|WALL                             
- 119 cm  CAUTION  [CAR]...........|WALL                              
- 119 cm  CAUTION  [CAR]...........|WALL                              
- 113 cm  CAUTION  [CAR]...........|WALL                              
- 113 cm  CAUTION  [CAR]...........|WALL                              
- 109 cm  CAUTION  [CAR]..........|WALL                               
- 109 cm  CAUTION  [CAR]..........|WALL                               
- 105 cm  CAUTION  [CAR]..........|WALL                               
- 105 cm  CAUTION  [CAR]..........|WALL                               
+  >> Zone SAFE -> CAUTION at 149 cm: Obstacle nearby - slow down
+ 149 cm  CAUTION  [CAR]..............|WALL                           
+ 149 cm  CAUTION  [CAR]..............|WALL                           
+ 144 cm  CAUTION  [CAR]..............|WALL                           
+ 144 cm  CAUTION  [CAR]..............|WALL                           
+ 139 cm  CAUTION  [CAR].............|WALL                            
+ 139 cm  CAUTION  [CAR].............|WALL                            
+ 139 cm  CAUTION  [CAR].............|WALL                            
+ 135 cm  CAUTION  [CAR].............|WALL                            
+ 135 cm  CAUTION  [CAR].............|WALL                            
+ 131 cm  CAUTION  [CAR].............|WALL                            
+ 131 cm  CAUTION  [CAR].............|WALL                            
+ 127 cm  CAUTION  [CAR]............|WALL                             
+ 127 cm  CAUTION  [CAR]............|WALL                             
+ 122 cm  CAUTION  [CAR]............|WALL                             
+ 122 cm  CAUTION  [CAR]............|WALL                             
+ 118 cm  CAUTION  [CAR]...........|WALL                              
+ 118 cm  CAUTION  [CAR]...........|WALL                              
+ 112 cm  CAUTION  [CAR]...........|WALL                              
+ 112 cm  CAUTION  [CAR]...........|WALL                              
+ 107 cm  CAUTION  [CAR]..........|WALL                               
+ 107 cm  CAUTION  [CAR]..........|WALL                               
  101 cm  CAUTION  [CAR]..........|WALL                               
  101 cm  CAUTION  [CAR]..........|WALL                               
-  96 cm  CAUTION  [CAR].........|WALL                                
-  96 cm  CAUTION  [CAR].........|WALL                                
-  90 cm  CAUTION  [CAR].........|WALL                                
-  90 cm  CAUTION  [CAR].........|WALL                                
+  95 cm  CAUTION  [CAR].........|WALL                                
+  95 cm  CAUTION  [CAR].........|WALL                                
+  91 cm  CAUTION  [CAR].........|WALL                                
+  91 cm  CAUTION  [CAR].........|WALL                                
   85 cm  CAUTION  [CAR]........|WALL                                 
   85 cm  CAUTION  [CAR]........|WALL                                 
 
-  >> Zone CAUTION -> DANGER at 80 cm: Obstacle very close - prepare to stop
-  80 cm  DANGER   [CAR]........|WALL                                 
-  80 cm  DANGER   [CAR]........|WALL                                 
-  75 cm  DANGER   [CAR].......|WALL                                  
-  75 cm  DANGER   [CAR].......|WALL                                  
-  69 cm  DANGER   [CAR]......|WALL                                   
-  69 cm  DANGER   [CAR]......|WALL                                   
-  64 cm  DANGER   [CAR]......|WALL                                   
-  64 cm  DANGER   [CAR]......|WALL                                   
-  64 cm  DANGER   [CAR]......|WALL                                   
-  58 cm  DANGER   [CAR].....|WALL                                    
-  58 cm  DANGER   [CAR].....|WALL                                    
-  52 cm  DANGER   [CAR].....|WALL                                    
-  52 cm  DANGER   [CAR].....|WALL                                    
-  48 cm  DANGER   [CAR]....|WALL                                     
-  48 cm  DANGER   [CAR]....|WALL                                     
-  43 cm  DANGER   [CAR]....|WALL                                     
-  43 cm  DANGER   [CAR]....|WALL                                     
+  >> Zone CAUTION -> DANGER at 79 cm: Obstacle very close - prepare to stop
+  79 cm  DANGER   [CAR].......|WALL                                  
+  79 cm  DANGER   [CAR].......|WALL                                  
+  74 cm  DANGER   [CAR].......|WALL                                  
+  74 cm  DANGER   [CAR].......|WALL                                  
+  74 cm  DANGER   [CAR].......|WALL                                  
+  70 cm  DANGER   [CAR].......|WALL                                  
+  70 cm  DANGER   [CAR].......|WALL                                  
+  65 cm  DANGER   [CAR]......|WALL                                   
+  65 cm  DANGER   [CAR]......|WALL                                   
+  59 cm  DANGER   [CAR].....|WALL                                    
+  59 cm  DANGER   [CAR].....|WALL                                    
+  54 cm  DANGER   [CAR].....|WALL                                    
+  54 cm  DANGER   [CAR].....|WALL                                    
+  49 cm  DANGER   [CAR]....|WALL                                     
+  49 cm  DANGER   [CAR]....|WALL                                     
+  44 cm  DANGER   [CAR]....|WALL                                     
+  44 cm  DANGER   [CAR]....|WALL                                     
   38 cm  DANGER   [CAR]...|WALL                                      
   38 cm  DANGER   [CAR]...|WALL                                      
-  32 cm  DANGER   [CAR]...|WALL                                      
-  32 cm  DANGER   [CAR]...|WALL                                      
+  33 cm  DANGER   [CAR]...|WALL                                      
+  33 cm  DANGER   [CAR]...|WALL                                      
 
-  >> Zone DANGER -> STOP at 26 cm: STOP! Obstacle at the bumper
-  26 cm  STOP     [CAR]..|WALL                                       
+  >> Zone DANGER -> STOP at 29 cm: STOP! Obstacle at the bumper
+  29 cm  STOP     [CAR]..|WALL                                       
 
-  AUTO-BRAKE engaged at 26 cm - vehicle stopped
+  AUTO-BRAKE engaged at 29 cm - vehicle stopped
 
 ========== Virtual Parking Sensor ==========
   1. Take a single reading
@@ -177,13 +181,13 @@ Live monitoring - press Ctrl+C to stop
 ============================================
 Choice:   Virtual Parking Sensor - driver statistics
   device        : /dev/parksensor (major 237, minor 0)
-  distance_cm   : 26
+  distance_cm   : 29
   zone          : STOP
   mode          : IDLE
   speed_cm/tick : 5 (tick = 200 ms)
   thresholds    : caution<=150 danger<=80 stop<=30
-  samples       : 114
-  zone_changes  : 15
+  samples       : 118
+  zone_changes  : 16
   opens         : 24
 
 ========== Virtual Parking Sensor ==========
@@ -201,13 +205,13 @@ Choice:   Virtual Parking Sensor - driver statistics
   0. Exit
 ============================================
 Choice:   Last entries of docs/test-results/demo_log.txt:
-  2026-10-04 17:24:31 [INFO] Application started, device /dev/parksensor
-  2026-10-04 17:24:31 [INFO] Reading 300 cm, zone SAFE
-  2026-10-04 17:24:31 [INFO] Live monitor started, mode REVERSING
-  2026-10-04 17:24:38 [WARN] Zone SAFE -> CAUTION at 148 cm
-  2026-10-04 17:24:41 [WARN] Zone CAUTION -> DANGER at 80 cm
-  2026-10-04 17:24:43 [ALERT] Zone DANGER -> STOP at 26 cm
-  2026-10-04 17:24:43 [ALERT] AUTO-BRAKE engaged at 26 cm
+  2026-10-05 08:58:02 [INFO] Application started, device /dev/parksensor
+  2026-10-05 08:58:02 [INFO] Reading 300 cm, zone SAFE
+  2026-10-05 08:58:02 [INFO] Live monitor started, mode REVERSING
+  2026-10-05 08:58:09 [WARN] Zone SAFE -> CAUTION at 149 cm
+  2026-10-05 08:58:12 [WARN] Zone CAUTION -> DANGER at 79 cm
+  2026-10-05 08:58:14 [ALERT] Zone DANGER -> STOP at 29 cm
+  2026-10-05 08:58:14 [ALERT] AUTO-BRAKE engaged at 29 cm
 
 ========== Virtual Parking Sensor ==========
   1. Take a single reading
