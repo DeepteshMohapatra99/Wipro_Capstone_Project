@@ -132,8 +132,8 @@ sudo dnf install gcc gcc-c++ make kernel-devel-$(uname -r) elfutils-libelf-devel
 ## Build & Run
 
 ```bash
-git clone <your-repo-url> virtual-parking-sensor
-cd virtual-parking-sensor
+git clone https://github.com/DeepteshMohapatra99/Wipro_Capstone_Project.git
+cd Wipro_Capstone_Project
 
 make                 # build driver, app and tests
 make load            # insert module  -> creates /dev/parksensor
@@ -281,4 +281,4 @@ See [docs/06_Final_Report.md](docs/06_Final_Report.md) for details.
 
 ---
 
-**Author:** Deeptesh Mohapatra · Capstone Project 2026
+**Author:** Deeptesh Mohapatra · Capstone Project 2026 · GitHub: https://github.com/DeepteshMohapatra99/Wipro_Capstone_Project
