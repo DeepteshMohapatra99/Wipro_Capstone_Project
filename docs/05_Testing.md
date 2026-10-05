@@ -114,7 +114,7 @@ in [docs/test-results/](test-results/). The pass/fail summary is in
 |---|---|---|
 | Unit | 11 | **11 passed, 0 failed** – [03_unit_tests.txt](test-results/03_unit_tests.txt) |
 | Integration | 14 | **14 passed, 0 failed** – [04_driver_tests.txt](test-results/04_driver_tests.txt) |
-| System (scripted) | ST-02, ST-03, ST-10, ST-11 | **passed** – auto-brake at 27 cm, [05_dashboard_demo.txt](test-results/05_dashboard_demo.txt) |
+| System (scripted) | ST-02, ST-03, ST-10, ST-11 | **passed** – auto-brake engaged in the STOP zone (≤ 30 cm), [05_dashboard_demo.txt](test-results/05_dashboard_demo.txt) |
 | System (manual) | 13 | tick the Result column in 5.5 |
 
 ## 5.8 Improvements in this Stage

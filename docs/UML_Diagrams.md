@@ -264,6 +264,11 @@ Zone transitions depend only on the distance and the thresholds
 
 ```mermaid
 stateDiagram-v2
+    state "SAFE (no beep)" as SAFE
+    state "CAUTION (beep every 800 ms)" as CAUTION
+    state "DANGER (beep every 300 ms)" as DANGER
+    state "STOP (beep every 100 ms + auto-brake)" as STOP
+
     [*] --> SAFE : distance > 150
 
     SAFE --> CAUTION : distance <= 150
@@ -273,16 +278,16 @@ stateDiagram-v2
     DANGER --> STOP : distance <= 30
     STOP --> DANGER : distance > 30
 
-    SAFE : no beep
-    CAUTION : beep every 800 ms
-    DANGER : beep every 300 ms
-    STOP : beep every 100 ms + auto-brake
 ```
 
 ## 6. State Machine – Vehicle mode (driver)
 
 ```mermaid
 stateDiagram-v2
+    state "IDLE (distance constant)" as IDLE
+    state "REVERSING (distance -= speed ± 1 per tick)" as REVERSING
+    state "FORWARD (distance += speed ± 1 per tick)" as FORWARD
+
     [*] --> IDLE : module loaded / reset
 
     IDLE --> REVERSING : SET_MODE(REVERSING)
@@ -293,10 +298,6 @@ stateDiagram-v2
     FORWARD --> IDLE : distance reached 400 cm
     REVERSING --> FORWARD : SET_MODE(FORWARD)
     FORWARD --> REVERSING : SET_MODE(REVERSING)
-
-    REVERSING : every tick distance -= speed ± 1
-    FORWARD : every tick distance += speed ± 1
-    IDLE : distance constant
 ```
 
 ## 7. State Machine – Application
