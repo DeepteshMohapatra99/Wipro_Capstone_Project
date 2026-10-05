@@ -1,8 +1,8 @@
-2026-10-05 08:58:02 [INFO] Application started, device /dev/parksensor
-2026-10-05 08:58:02 [INFO] Reading 300 cm, zone SAFE
-2026-10-05 08:58:02 [INFO] Live monitor started, mode REVERSING
-2026-10-05 08:58:09 [WARN] Zone SAFE -> CAUTION at 149 cm
-2026-10-05 08:58:12 [WARN] Zone CAUTION -> DANGER at 79 cm
-2026-10-05 08:58:14 [ALERT] Zone DANGER -> STOP at 29 cm
-2026-10-05 08:58:14 [ALERT] AUTO-BRAKE engaged at 29 cm
-2026-10-05 08:58:14 [INFO] Application exited
+2026-10-05 09:10:43 [INFO] Application started, device /dev/parksensor
+2026-10-05 09:10:43 [INFO] Reading 300 cm, zone SAFE
+2026-10-05 09:10:43 [INFO] Live monitor started, mode REVERSING
+2026-10-05 09:10:49 [WARN] Zone SAFE -> CAUTION at 149 cm
+2026-10-05 09:10:52 [WARN] Zone CAUTION -> DANGER at 79 cm
+2026-10-05 09:10:54 [ALERT] Zone DANGER -> STOP at 29 cm
+2026-10-05 09:10:54 [ALERT] AUTO-BRAKE engaged at 29 cm
+2026-10-05 09:10:54 [INFO] Application exited
